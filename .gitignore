@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+.ipynb_checkpoints/
+
+# Raw HTTP response cache (re-creatable by re-running the scrapers)
+data/cache/
+
+# Scraper run logs
+logs/

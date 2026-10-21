@@ -1,0 +1,72 @@
+# Vehicle scope and scraper settings for data collection (Ticket 01).
+#
+# Each model lists the name/slug each source expects:
+#   autolist   - model name accepted by the Autolist search API
+#   craigslist - value for Craigslist's auto_make_model filter
+#   carsdirect - URL slug on carsdirect.com (/<make>/<slug>/<year>), the MSRP source
+
+model_years:
+  min: 2012
+  max: 2024
+
+makes:
+  - make: Toyota
+    carsdirect_make: toyota
+    models:
+      - {name: Camry,   autolist: Camry,   craigslist: toyota camry,   carsdirect: camry}
+      - {name: Corolla, autolist: Corolla, craigslist: toyota corolla, carsdirect: corolla}
+      - {name: RAV4,    autolist: RAV4,    craigslist: toyota rav4,    carsdirect: rav4}
+      - {name: Tacoma,  autolist: Tacoma,  craigslist: toyota tacoma,  carsdirect: tacoma}
+
+  - make: Honda
+    carsdirect_make: honda
+    models:
+      - {name: Civic,  autolist: Civic,  craigslist: honda civic,  carsdirect: civic}
+      - {name: Accord, autolist: Accord, craigslist: honda accord, carsdirect: accord}
+      - {name: CR-V,   autolist: CR-V,   craigslist: honda cr-v,   carsdirect: cr-v}
+      - {name: Pilot,  autolist: Pilot,  craigslist: honda pilot,  carsdirect: pilot}
+
+  - make: Ford
+    carsdirect_make: ford
+    models:
+      - {name: F-150,    autolist: F-150,    craigslist: ford f-150,    carsdirect: f-150}
+      - {name: Escape,   autolist: Escape,   craigslist: ford escape,   carsdirect: escape}
+      - {name: Explorer, autolist: Explorer, craigslist: ford explorer, carsdirect: explorer}
+      - {name: Mustang,  autolist: Mustang,  craigslist: ford mustang,  carsdirect: mustang}
+
+  - make: Chevrolet
+    carsdirect_make: chevrolet
+    models:
+      - {name: Silverado 1500, autolist: Silverado 1500, craigslist: chevrolet silverado 1500, carsdirect: silverado-1500}
+      - {name: Equinox,        autolist: Equinox,        craigslist: chevrolet equinox,        carsdirect: equinox}
+      - {name: Malibu,         autolist: Malibu,         craigslist: chevrolet malibu,         carsdirect: malibu}
+      - {name: Tahoe,          autolist: Tahoe,          craigslist: chevrolet tahoe,          carsdirect: tahoe}
+
+scrape:
+  # Seconds between HTTP requests to the same host.
+  request_delay: 1.5
+
+  autolist:
+    # Listings requested per model per model year (balances the age distribution).
+    per_model_year: 6
+    fetch_details: true # one extra request per listing, for the description text
+
+  craigslist:
+    # Large metro regions to spread the sample geographically.
+    regions:
+      - losangeles
+      - sfbay
+      - sandiego
+      - seattle
+      - portland
+      - phoenix
+      - denver
+      - dallas
+      - houston
+      - chicago
+      - atlanta
+      - miami
+      - newyork
+      - boston
+    # Maximum posting pages fetched per model (sampled across regions).
+    max_posts_per_model: 90

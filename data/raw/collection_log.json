@@ -1,0 +1,58 @@
+{
+  "autolist": {
+    "scraped_at": "2026-10-21T19:01:52+00:00",
+    "rows": 1248,
+    "rows_per_make": {
+      "Toyota": 312,
+      "Honda": 312,
+      "Ford": 312,
+      "Chevrolet": 312
+    },
+    "http": {
+      "requests": 1452,
+      "cache_hits": 4,
+      "failures": 4
+    }
+  },
+  "craigslist": {
+    "scraped_at": "2026-10-21T19:01:53+00:00",
+    "rows": 1440,
+    "rows_per_make": {
+      "Toyota": 360,
+      "Honda": 360,
+      "Ford": 360,
+      "Chevrolet": 360
+    },
+    "regions": [
+      "losangeles",
+      "sfbay",
+      "sandiego",
+      "seattle",
+      "portland",
+      "phoenix",
+      "denver",
+      "dallas",
+      "houston",
+      "chicago",
+      "atlanta",
+      "miami",
+      "newyork",
+      "boston"
+    ],
+    "http": {
+      "requests": 1660,
+      "cache_hits": 4,
+      "failures": 0
+    }
+  },
+  "carsdirect_msrp": {
+    "scraped_at": "2026-10-21T19:05:46+00:00",
+    "rows": 3022,
+    "model_years_missing": [],
+    "http": {
+      "requests": 205,
+      "cache_hits": 3,
+      "failures": 0
+    }
+  }
+}

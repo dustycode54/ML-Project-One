@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -)",
+      "Bash(python3 -m venv .venv)",
+      "Bash(.venv/bin/pip install *)",
+      "Bash(.venv/bin/pip freeze *)",
+      "Bash(curl -sL -o /dev/null -w 'curl %{http_code} %{size_download}\\\\n' -m 20 -A 'Mozilla/5.0 \\(Macintosh; Intel Mac OS X 10_15_7\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/126.0 Safari/537.36' -H 'Accept: text/html' -H 'Accept-Language: en-US,en;q=0.9' https://www.kbb.com/honda/civic/2016/)",
+      "Bash(.venv/bin/python -c ' *)",
+      "Bash(/Users/dustink/git/ML-Project-One/.venv/bin/python -)",
+      "Bash(.venv/bin/python -m src.scrapers.autolist)",
+      "Bash(.venv/bin/python -m src.scrapers.craigslist)",
+      "Bash(.venv/bin/python -m src.scrapers.carsdirect_msrp)"
+    ]
+  }
+}
