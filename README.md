@@ -22,12 +22,23 @@ Vehicle scope (makes, models, model years) and scraper settings live in [config/
 
 Each scraper rate-limits its requests and caches every response under `data/cache/` (git-ignored), so re-running after a parser change does not re-download pages. Delete `data/cache/<source>/` to force a fresh scrape. Row counts, scrape timestamps and HTTP stats are written to `data/raw/collection_log.json`.
 
+## Preprocessing and Integration
+
+```bash
+python -m src.preprocess
+```
+
+This merges the raw listings and MSRP into `data/processed/integrated.csv`, which has one row per vehicle and a `value_retention_ratio` column. It also writes EDA tables to `reports/eda_summary.md` and `reports/eda/*.csv`, and stage counts to `reports/preprocessing_log.json`. The cleaning, deduplication and MSRP-matching rules are documented in [Ticket 02](implementation_steps/02_preprocessing_and_integration.md#implementation-notes).
+
 ## Repository Layout
 
 ```
 config/            vehicle scope and scraper settings
 data/raw/          parsed output from each source (one file per source) + MSRP
+data/processed/    integrated, cleaned dataset
 data/cache/        cached HTTP responses (not committed)
+reports/           EDA summary and preprocessing log
 src/scrapers/      one module per source, plus shared HTTP/IO helpers
+src/preprocess.py  raw -> integrated pipeline
 implementation_steps/  per-step tickets
 ```

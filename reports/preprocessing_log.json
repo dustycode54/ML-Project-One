@@ -1,0 +1,32 @@
+{
+  "stage_counts": {
+    "raw: autolist": 1248,
+    "raw: craigslist": 1440,
+    "raw: combined": 2688,
+    "removed: make/model/year out of scope": 0,
+    "removed: electric or other-model variant": 32,
+    "removed: price missing or < $1,000 (call-for-price / placeholder)": 238,
+    "removed: price < $5,000 is a down payment ('$X down' ad)": 33,
+    "removed: mileage missing": 16,
+    "removed: odometer flagged broken / rolled over": 8,
+    "removed: mileage placeholder or > 400k": 2,
+    "removed: branded title (salvage / rebuilt / missing)": 154,
+    "removed: non-US location": 0,
+    "after invalid / out-of-scope removal": 2205,
+    "removed: duplicate VIN": 4,
+    "removed: duplicate year/make/model/mileage/price": 17,
+    "after deduplication": 2184,
+    "removed: no MSRP for make/model/year": 0,
+    "after MSRP match": 2184,
+    "removed: value_retention_ratio outside [0.1, 1.5]": 23,
+    "final": 2161,
+    "final: craigslist": 1130,
+    "final: autolist": 1031
+  },
+  "msrp_match_rate": {
+    "autolist/trim": 0.982,
+    "autolist/model_year": 0.018,
+    "craigslist/trim": 0.783,
+    "craigslist/model_year": 0.217
+  }
+}

@@ -10,7 +10,10 @@
       "Bash(/Users/dustink/git/ML-Project-One/.venv/bin/python -)",
       "Bash(.venv/bin/python -m src.scrapers.autolist)",
       "Bash(.venv/bin/python -m src.scrapers.craigslist)",
-      "Bash(.venv/bin/python -m src.scrapers.carsdirect_msrp)"
+      "Bash(.venv/bin/python -m src.scrapers.carsdirect_msrp)",
+      "Read(//opt/homebrew/Cellar/python@3.14/3.14.2/Frameworks/Python.framework/Versions/3.14/bin/**)",
+      "Bash(.venv/bin/python -)",
+      "Bash(.venv/bin/python -m src.preprocess)"
     ]
   }
 }

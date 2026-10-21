@@ -1,0 +1,229 @@
+column,value,count
+source,craigslist,1130
+source,autolist,1031
+make,Toyota,552
+make,Ford,542
+make,Honda,537
+make,Chevrolet,530
+model,RAV4,147
+model,Explorer,146
+model,Pilot,145
+model,Tahoe,143
+model,CR-V,140
+model,Tacoma,139
+model,Escape,138
+model,Camry,136
+model,F-150,136
+model,Civic,131
+model,Silverado 1500,131
+model,Malibu,131
+model,Corolla,130
+model,Equinox,125
+model,Mustang,122
+model,Accord,121
+trim,,264
+trim,LT,160
+trim,SE,135
+trim,LE,124
+trim,XLT,122
+trim,EX-L,118
+trim,LX,105
+trim,EX,104
+trim,1LT,77
+trim,LS,64
+trim,XLE,60
+trim,Sport,55
+trim,Limited,55
+trim,Touring,42
+trim,LTZ,35
+trim,XL,34
+trim,GT,26
+trim,SEL,23
+trim,V6,22
+trim,Premier,22
+trim,RST,21
+trim,Titanium,20
+trim,EcoBoost Premium,20
+trim,SR5,19
+trim,GT Premium,19
+trim,L,18
+trim,S,16
+trim,Base,16
+trim,Base V6,16
+trim,XSE,15
+trim,Sport 1.5T,15
+trim,TRD Off Road V6,14
+trim,EcoBoost,14
+trim,XLE Premium,13
+trim,TRD Off Road,13
+trim,1LZ,13
+trim,SR,12
+trim,Elite,12
+trim,Custom,12
+trim,RS,11
+trim,High Country,10
+trim,1LS,10
+trim,TRD Sport,9
+trim,SR5 V6,9
+trim,Lariat,9
+trim,Active,8
+trim,TRD Sport V6,7
+trim,EX-L V-6,7
+trim,ST-Line,7
+trim,V6 Premium,7
+trim,SR V6,6
+trim,STX,6
+trim,ST,6
+trim,Z71,6
+trim,PreRunner,5
+trim,Si,5
+trim,Work Truck,5
+trim,Sport Touring,4
+trim,Touring 2.0T,4
+trim,PreRunner V6,3
+trim,2.4 EX,3
+trim,TrailSport,3
+trim,King Ranch,3
+trim,Raptor,3
+trim,ST-Line Select,3
+trim,Platinum,3
+trim,TRD V6,2
+trim,SE Nightshade,2
+trim,XSE V6,2
+trim,LE Premium,2
+trim,LE ECO Plus,2
+trim,S Plus,2
+trim,Adventure,2
+trim,Natural Gas,2
+trim,SVT Raptor,2
+trim,Special Edition,2
+trim,BULLITT,2
+trim,2LT,2
+trim,SE V6,1
+trim,XLE V6,1
+trim,LE Plus,1
+trim,S Premium,1
+trim,LE ECO Premium,1
+trim,TRD Pro V6,1
+trim,LX-P,1
+trim,EX-T,1
+trim,2.4 EX-L,1
+trim,EX 1.5T,1
+trim,LX 1.5T,1
+trim,FX2,1
+trim,FX4,1
+trim,Mach 1,1
+trim,Eco,1
+trim,Core,1
+trim,2.4 SE,1
+trim,2.4 LX-S,1
+trim,Sport 2.0T,1
+trim,2.4 LX,1
+trim,Titanium Hybrid,1
+trim,SE Sport,1
+trim,SE Hybrid,1
+trim,Timberline,1
+trim,Boss 302,1
+trim,Custom Trail Boss,1
+trim,2LZ,1
+trim,Silverado Custom,1
+trim,LT Trail Boss,1
+trim,WT,1
+body_type,suv,949
+body_type,sedan,582
+body_type,pickup,395
+body_type,coupe,109
+body_type,other,36
+body_type,unknown,34
+body_type,hatchback,29
+body_type,convertible,25
+body_type,wagon,2
+drivetrain,fwd,870
+drivetrain,awd_4wd,790
+drivetrain,unknown,260
+drivetrain,rwd,241
+transmission,automatic,2064
+transmission,manual,56
+transmission,other,30
+transmission,unknown,11
+fuel_type,gas,2095
+fuel_type,hybrid,32
+fuel_type,other,18
+fuel_type,diesel,14
+fuel_type,unknown,2
+exterior_color,white,469
+exterior_color,black,383
+exterior_color,unknown,325
+exterior_color,gray,323
+exterior_color,silver,249
+exterior_color,blue,180
+exterior_color,red,128
+exterior_color,brown,36
+exterior_color,other,33
+exterior_color,green,19
+exterior_color,gold,8
+exterior_color,yellow,4
+exterior_color,orange,4
+condition,unknown,1544
+condition,excellent,330
+condition,good,159
+condition,like new,120
+condition,fair,5
+condition,new,3
+title_status,clean,2147
+title_status,unknown,13
+title_status,lien,1
+seller_type,dealer,1811
+seller_type,owner,350
+state,CA,315
+state,FL,208
+state,TX,204
+state,AZ,121
+state,WA,121
+state,IL,115
+state,GA,111
+state,OR,99
+state,NY,98
+state,CO,95
+state,MA,71
+state,NC,44
+state,OH,41
+state,WI,41
+state,IN,36
+state,NJ,35
+state,NH,31
+state,TN,30
+state,VA,27
+state,MI,24
+state,OK,23
+state,MO,20
+state,AL,19
+state,PA,17
+state,MN,15
+state,IA,15
+state,KY,14
+state,HI,13
+state,,13
+state,SC,12
+state,UT,12
+state,ID,12
+state,LA,10
+state,MS,10
+state,CT,10
+state,KS,9
+state,NM,9
+state,ND,8
+state,MD,8
+state,ME,8
+state,NV,6
+state,RI,5
+state,NE,5
+state,AR,5
+state,WY,4
+state,MT,4
+state,SD,3
+state,WV,3
+state,VT,1
+state,DE,1
+msrp_match_level,trim,1897
+msrp_match_level,model_year,264

@@ -1,0 +1,3 @@
+source,listings,median_price,median_mileage,median_year,median_msrp,median_ratio,mean_ratio,trim_match_pct,with_description_pct
+autolist,1031,17597.0,86795.0,2018.0,30160.0,0.5964,0.5944980601357905,98.2,87.9
+craigslist,1130,13850.0,111777.0,2017.0,29145.0,0.44584999999999997,0.48215893805309734,78.3,100.0

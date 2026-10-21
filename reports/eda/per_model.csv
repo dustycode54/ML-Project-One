@@ -1,0 +1,17 @@
+make,model,listings,autolist,craigslist,median_price,median_ratio
+Chevrolet,Equinox,125,62,63,10246.0,0.3512
+Chevrolet,Malibu,131,65,66,10643.0,0.42
+Chevrolet,Silverado 1500,131,61,70,21498.0,0.5213
+Chevrolet,Tahoe,143,68,75,19500.0,0.3578
+Ford,Escape,138,60,78,9694.5,0.33145
+Ford,Explorer,146,66,80,12838.5,0.33155
+Ford,F-150,136,61,75,17092.0,0.4728
+Ford,Mustang,122,63,59,19795.0,0.61405
+Honda,Accord,121,61,60,15197.0,0.5822
+Honda,CR-V,140,70,70,14997.0,0.55575
+Honda,Civic,131,59,72,13999.0,0.672
+Honda,Pilot,145,72,73,14999.0,0.4169
+Toyota,Camry,136,62,74,15065.5,0.58995
+Toyota,Corolla,130,62,68,13989.0,0.70795
+Toyota,RAV4,147,72,75,17117.0,0.6433
+Toyota,Tacoma,139,67,72,24272.0,0.803
