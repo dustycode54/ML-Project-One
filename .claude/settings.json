@@ -43,7 +43,12 @@
       "Bash(time .venv/bin/python -m src.report)",
       "Bash(.venv/bin/python -m src.report)",
       "Bash(sed -n '/## Acceptance Criteria/,/## Artifacts/p' implementation_steps/04_model_development.md)",
-      "Bash(git checkout *)"
+      "Bash(git checkout *)",
+      "Bash(.venv/bin/python -c \"import pypdf\")",
+      "Bash(python3 -c \"import pypdf\")",
+      "Bash(python3 -m pip install -q --target /private/tmp/claude-501/-Users-dustink-git-ML-Project-One/fdc632da-e75e-4897-8c2a-52791896b443/scratchpad/pylib pypdf)",
+      "Bash(python3 -c ' *)",
+      "Read(//dev/**)"
     ]
   }
 }

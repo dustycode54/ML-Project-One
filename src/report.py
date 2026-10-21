@@ -54,7 +54,7 @@ p, li { orphans: 3; widows: 3; }
 ul, ol { padding-left: 18pt; }
 li { margin: 2pt 0; }
 code { font: 8.5pt Menlo, Consolas, monospace; background: var(--wash); padding: 0 2pt; border-radius: 2px; }
-pre { background: var(--wash); padding: 8pt 10pt; border-radius: 4px; overflow-x: auto; break-inside: avoid; }
+pre { background: var(--wash); padding: 8pt 10pt; border-radius: 4px; overflow-x: auto; white-space: pre-wrap; break-inside: avoid; }
 pre code { padding: 0; font-size: 8pt; }
 blockquote { margin: 10pt 0; padding: 6pt 12pt; background: var(--wash); border-left: 3px solid #2a78d6; }
 blockquote p { margin: 4pt 0; }

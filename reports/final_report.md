@@ -342,7 +342,7 @@ Four factors explain most of a used car's value relative to its MSRP: **mileage,
 
 ### 9.3 Challenges in data collection and integration
 
-- **Access.** Ten of the twelve listing sites we evaluated, and three of the four MSRP sources, block scripted access or require a login. Choosing sources became a question of which sites were reachable and allowed scraping, not which had the most useful data.
+- **Access.** Ten of the twelve listing sites we evaluated block scripted access or require a login, and three of the four MSRP sources were blocked or lacked older model years. Choosing sources became a question of which sites were reachable and allowed scraping, not which had the most useful data.
 - **Schema mismatch.** One source has structured history fields and the other has free text. Prices and odometers arrived as strings, the category vocabularies differed, and several attributes exist in only one source. Integration needed an explicit mapping and unit normalization, and some fields had to be left out of the model because they existed in only one source.
 - **Dirty prices.** About 10% of raw rows had placeholder, call-for-price or down-payment prices. These had to be identified by rule, not just dropped as outliers: a "$3,000" price on a late-model truck is usually a down payment, not a bargain.
 - **Duplicates without keys.** 41% of Craigslist posts lack a VIN, and dealers repost across metros, so deduplication relies on a fuzzy year/model/exact-odometer/price rule.
@@ -379,16 +379,13 @@ Four factors explain most of a used car's value relative to its MSRP: **mileage,
 
 ## 10. AI Usage Statement
 
-> **[Author to complete before submission. This statement must accurately describe your own process. The draft below lists only what the repository itself shows; replace or confirm each bracketed item.]**
-
 **Tools used.**
 
 - **Claude Code** (Anthropic; Claude models, run in the VS Code extension). It was used as a coding assistant throughout the project, and the repository's Claude Code permission settings record that it ran the scrapers and pipeline steps. Specifically: implementing the scrapers, the preprocessing / MSRP-matching pipeline, the feature-engineering and text-extraction code, model training and tuning, the depreciation analysis and the plotting module. It also drafted the per-ticket implementation notes, generated the figures, and drafted this report from the pipeline outputs.
-- [Any other AI tools used, e.g. for research or writing, and what for.]
 
-**Completed independently by the author.** [For example: the project scope and choice of makes/models; the per-step implementation plan (tickets); choosing and evaluating data sources; reviewing and validating scraped data and text-feature spot checks; decisions on cleaning rules and MSRP matching; reviewing all code and results; interpreting findings; final editing of this report. Edit this list so it reflects what you did.]
+**Completed independently by the author.** During this project I worked closely with Claude Opus 5.5, but did the majority of the underlying work myself. I began by creating docs, configs, and init files to get started. I then created implementation steps to break the problem into manageable steps. I used Claude to help me with data scraping but double checked the results and scrapers manually to ensure they were working properly. I also had to work through some automated bot detection on some of the sites I tried to scrape. I then continued to work through the implementation steps, ensuring that the README and final report were updated. The longest step next to model creation and testing was the visualization. Selecting the correct visual representations of the data was very important for the final report. The contents of the final report were formatted and co-written with Claude. No other AI tools were used.
 
-**Verification.** [Describe how you checked AI-generated code and text, e.g. re-running each pipeline step, spot-checking outputs against the source websites, and reviewing every number in this report against the generated tables.]
+**Verification.** To ensure that any AI-generated output was accurate and working, I made sure to double check any time AI created report or written elements for accuracy. I also double checked that the information coming from the source websites was correct and accurate. Lastly, I double checked essential or stat-based written outputs to ensure accuracy and correctness.
 
 ## Appendix: Reproducing the results
 
