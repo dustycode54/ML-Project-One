@@ -1,0 +1,22 @@
+model,group,n_features,mae_increase,mae_increase_std
+ridge,age + mileage + miles_per_year,3,0.12646,0.00334
+ridge,make + model + trim_key + msrp,4,0.09681,0.00519
+ridge,body / drivetrain / engine,5,0.00327,0.00072
+ridge,"location (lat, lon, state, city, region)",5,0.00605,0.00091
+ridge,source + seller_type,2,0.00294,0.00064
+ridge,text flags + description,10,0.00326,0.00154
+ridge,text flags only,8,0.00106,0.00085
+random_forest,age + mileage + miles_per_year,3,0.11585,0.00353
+random_forest,make + model + trim_key + msrp,4,0.06712,0.00411
+random_forest,body / drivetrain / engine,5,0.01406,0.00156
+random_forest,"location (lat, lon, state, city, region)",5,0.00146,0.00061
+random_forest,source + seller_type,2,0.00234,0.0004
+random_forest,text flags + description,10,0.00375,0.00095
+random_forest,text flags only,8,0.00086,0.0003
+hist_gb,age + mileage + miles_per_year,3,0.12736,0.00326
+hist_gb,make + model + trim_key + msrp,4,0.08554,0.00532
+hist_gb,body / drivetrain / engine,5,0.01642,0.00137
+hist_gb,"location (lat, lon, state, city, region)",5,0.00532,0.00102
+hist_gb,source + seller_type,2,0.0034,0.0005
+hist_gb,text flags + description,10,0.00289,0.00134
+hist_gb,text flags only,8,0.00058,0.00053

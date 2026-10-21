@@ -1,0 +1,298 @@
+column,feature,coef,scale,effect_per_unit
+model_Escape,model,-0.149885,1.0,-0.149885
+model_Tacoma,model,0.149422,1.0,0.149422
+condition_fair,condition,-0.126964,1.0,-0.126964
+model_F-150,model,0.121628,1.0,0.121628
+mileage,mileage,-0.106134,49628.608296,-2e-06
+make_Toyota,make,0.09284,1.0,0.09284
+vehicle_age,vehicle_age,-0.082138,3.610737,-0.022748
+model_Malibu,model,-0.079882,1.0,-0.079882
+make_Chevrolet,make,-0.073269,1.0,-0.073269
+model_Pilot,model,-0.0667,1.0,-0.0667
+model_CR-V,model,0.064353,1.0,0.064353
+condition_excellent,condition,0.057498,1.0,0.057498
+model_Mustang,model,0.055805,1.0,0.055805
+exterior_color_yellow,exterior_color,-0.055615,1.0,-0.055615
+model_Silverado 1500,model,0.055045,1.0,0.055045
+fuel_type_hybrid,fuel_type,0.053439,1.0,0.053439
+model_Equinox,model,-0.052273,1.0,-0.052273
+model_Explorer,model,-0.046482,1.0,-0.046482
+msrp,msrp,-0.044277,10019.661541,-4e-06
+body_type_unknown,body_type,0.042265,1.0,0.042265
+region_northeast,region,-0.040722,1.0,-0.040722
+model_Corolla,model,-0.040241,1.0,-0.040241
+exterior_color_other,exterior_color,0.039635,1.0,0.039635
+exterior_color_orange,exterior_color,0.033008,1.0,0.033008
+model_Camry,model,-0.032531,1.0,-0.032531
+condition_unknown,condition,0.030309,1.0,0.030309
+log_description_len,log_description_len,0.030116,1.915442,0.015723
+region_west,region,0.02921,1.0,0.02921
+body_type_suv,body_type,-0.026002,1.0,-0.026002
+region_midwest,region,0.023878,1.0,0.023878
+body_type_pickup,body_type,-0.023675,1.0,-0.023675
+drivetrain_awd_4wd,drivetrain,0.023213,1.0,0.023213
+body_type_hatchback,body_type,0.02233,1.0,0.02233
+title_status_unknown,title_status,-0.021872,1.0,-0.021872
+condition_good,condition,0.020881,1.0,0.020881
+body_type_sedan,body_type,-0.0202,1.0,-0.0202
+has_description,has_description,-0.019594,0.225661,-0.086831
+drivetrain_rwd,drivetrain,-0.01926,1.0,-0.01926
+title_status_lien,title_status,0.019169,1.0,0.019169
+make_Ford,make,-0.018934,1.0,-0.018934
+fuel_type_other,fuel_type,-0.018221,1.0,-0.018221
+body_type_coupe,body_type,0.017796,1.0,0.017796
+body_type_other,body_type,-0.017422,1.0,-0.017422
+transmission_automatic,transmission,-0.016461,1.0,-0.016461
+model_RAV4,model,0.01619,1.0,0.01619
+exterior_color_gold,exterior_color,-0.015014,1.0,-0.015014
+fuel_type_gas,fuel_type,-0.014456,1.0,-0.014456
+drivetrain_unknown,drivetrain,-0.014024,1.0,-0.014024
+exterior_color_brown,exterior_color,0.014003,1.0,0.014003
+transmission_manual,transmission,0.013993,1.0,0.013993
+condition_new,condition,0.013804,1.0,0.013804
+trim_key_Ford Explorer unknown,trim_key,-0.013495,0.104281,-0.129407
+trim_key_Ford Mustang EcoBoost Premium,trim_key,-0.01295,0.092764,-0.139605
+exterior_color_silver,exterior_color,-0.012605,1.0,-0.012605
+fuel_type_unknown,fuel_type,-0.01256,1.0,-0.01256
+region_south,region,-0.012491,1.0,-0.012491
+trim_key_Honda Civic LX,trim_key,0.012179,0.14087,0.086459
+trim_key_Chevrolet Tahoe RST,trim_key,0.012174,0.053714,0.22665
+trim_key_Ford Mustang GT,trim_key,0.011977,0.106958,0.111981
+state_TX,state,0.011765,0.292285,0.040251
+trim_key_Ford F-150 XLT,trim_key,-0.011433,0.157527,-0.07258
+model_Civic,model,0.011323,1.0,0.011323
+txt_clean_title,txt_clean_title,-0.010935,0.399739,-0.027355
+seller_type_dealer,seller_type,0.010216,1.0,0.010216
+seller_type_owner,seller_type,-0.010216,1.0,-0.010216
+drivetrain_fwd,drivetrain,0.010071,1.0,0.010071
+trim_key_Ford F-150 unknown,trim_key,-0.009745,0.109568,-0.088942
+state_MA,state,0.009734,0.1786,0.054503
+trim_key_Ford F-150 STX,trim_key,-0.009678,0.053714,-0.180176
+model_Accord,model,-0.009613,1.0,-0.009613
+trim_key_Chevrolet Tahoe Z71,trim_key,0.009527,0.053714,0.177359
+source_craigslist,source,-0.009448,1.0,-0.009448
+source_autolist,source,0.009448,1.0,0.009448
+state_IN,state,-0.009267,0.121737,-0.076123
+cylinders,cylinders,0.009035,1.448394,0.006238
+trim_key_Honda Accord LX,trim_key,0.009005,0.098697,0.091243
+miles_per_year,miles_per_year,-0.008404,6822.634494,-1e-06
+state_CO,state,-0.008395,0.203762,-0.041202
+trim_key_Ford Explorer XLT,trim_key,-0.008311,0.170842,-0.048647
+trim_key_Honda Accord Sport,trim_key,0.008264,0.095779,0.086281
+fuel_type_diesel,fuel_type,-0.008202,1.0,-0.008202
+trim_key_Chevrolet Tahoe LT,trim_key,0.007967,0.142826,0.055783
+trim_key_Honda Civic Sport,trim_key,0.00783,0.095779,0.081755
+trim_key_Chevrolet Equinox 1LT,trim_key,-0.007398,0.086409,-0.085612
+trim_key_Ford Mustang GT Premium,trim_key,0.007345,0.098697,0.074416
+"city_key_houston, TX",city_key,-0.007264,0.152197,-0.047727
+exterior_color_gray,exterior_color,-0.007257,1.0,-0.007257
+trim_key_Chevrolet Tahoe High Country,trim_key,0.007214,0.053714,0.134299
+state_NC,state,0.00717,0.148526,0.048274
+state_UT,state,-0.00707,0.071981,-0.098216
+state_OH,state,-0.00704,0.130613,-0.053901
+trim_key_Chevrolet Malibu unknown,trim_key,-0.007014,0.092764,-0.07561
+trim_key_Chevrolet Equinox LT,trim_key,-0.006883,0.152197,-0.045222
+trim_key_Chevrolet Silverado 1500 1LT,trim_key,0.006857,0.095779,0.071596
+trim_key_Ford Escape XLT,trim_key,0.006847,0.053714,0.12748
+"city_key_brooklyn, NY",city_key,-0.006576,0.098697,-0.066628
+"city_key_auburn, WA",city_key,0.006452,0.063518,0.101584
+trim_key_Ford Escape SE,trim_key,-0.006352,0.150374,-0.042244
+trim_key_Toyota Tacoma Base,trim_key,0.006192,0.053714,0.115272
+trim_key_Toyota RAV4 Limited,trim_key,-0.0061,0.104281,-0.0585
+body_type_wagon,body_type,0.005989,1.0,0.005989
+trim_key_Toyota Tacoma SR5,trim_key,-0.005983,0.086409,-0.069246
+trim_key_Ford Explorer Limited,trim_key,-0.005892,0.104281,-0.056502
+trim_key_Toyota Tacoma unknown,trim_key,0.005742,0.095779,0.059948
+trim_key_Honda Civic EX,trim_key,0.00564,0.112113,0.050307
+state_CA,state,-0.005633,0.351188,-0.016039
+"city_key_sunnyside, NY",city_key,-0.005615,0.058823,-0.095462
+trim_key_Toyota Camry unknown,trim_key,-0.005569,0.067884,-0.082038
+txt_needs_work,txt_needs_work,-0.005531,0.053714,-0.10298
+state_IL,state,-0.005514,0.227935,-0.024192
+trim_key_Ford Escape SEL,trim_key,-0.005482,0.098697,-0.055546
+state_PA,state,0.005424,0.086409,0.062776
+trim_key_Ford Explorer Sport,trim_key,-0.005342,0.079531,-0.067173
+trim_key_Honda Pilot unknown,trim_key,0.005329,0.109568,0.048633
+state_AL,state,0.005289,0.089645,0.058998
+trim_key_Chevrolet Tahoe unknown,trim_key,0.00517,0.114599,0.045111
+trim_key_Toyota Corolla L,trim_key,0.005134,0.079531,0.064553
+trim_key_Toyota Tacoma Base V6,trim_key,0.005101,0.083043,0.061426
+trim_key_Ford Explorer Base,trim_key,-0.005061,0.067884,-0.074558
+trim_key_Toyota Tacoma PreRunner,trim_key,0.00503,0.053714,0.093639
+"city_key_denver, CO",city_key,0.004972,0.104281,0.04768
+city_key_infrequent_sklearn,city_key,0.004836,0.482592,0.01002
+state_NH,state,0.004825,0.121737,0.039635
+"city_key_honolulu, HI",city_key,0.004652,0.063518,0.07324
+condition_like new,condition,0.004471,1.0,0.004471
+trim_key_infrequent_sklearn,trim_key,0.004325,0.267456,0.016171
+trim_key_Toyota Camry XLE,trim_key,-0.004254,0.071981,-0.059105
+"city_key_lakewood, WA",city_key,-0.004179,0.063518,-0.065795
+trim_key_Chevrolet Equinox LS,trim_key,-0.004064,0.119408,-0.034034
+"city_key_panorama city, CA",city_key,-0.004043,0.063518,-0.063648
+state_TN,state,0.004038,0.109568,0.036853
+state_HI,state,-0.004019,0.079531,-0.050531
+"city_key_surprise, AZ",city_key,0.004018,0.053714,0.074803
+trim_key_Ford F-150 Lariat,trim_key,-0.004007,0.063518,-0.06309
+trim_key_Ford Mustang EcoBoost,trim_key,-0.004004,0.079531,-0.050351
+trim_key_Ford F-150 XL,trim_key,-0.004003,0.119408,-0.033527
+"city_key_englewood, CO",city_key,0.003902,0.063518,0.061426
+"city_key_loganville, GA",city_key,0.003901,0.053714,0.072629
+model_Tahoe,model,0.003841,1.0,0.003841
+trim_key_Ford Mustang V6,trim_key,-0.003827,0.098697,-0.03878
+trim_key_Toyota RAV4 XLE Premium,trim_key,0.003827,0.079531,0.048116
+trim_key_Toyota RAV4 unknown,trim_key,-0.003817,0.095779,-0.039847
+"city_key_fort lauderdale, FL",city_key,-0.003805,0.086409,-0.04403
+trim_key_Honda Accord Sport 1.5T,trim_key,0.003692,0.079531,0.046428
+lon,lon,-0.00368,18.454586,-0.000199
+trim_key_Ford Escape Titanium,trim_key,-0.003656,0.095779,-0.03817
+trim_key_Chevrolet Tahoe LS,trim_key,0.003586,0.083043,0.043187
+exterior_color_white,exterior_color,0.003583,1.0,0.003583
+trim_key_Honda Civic unknown,trim_key,-0.003535,0.075852,-0.046609
+trim_key_Toyota Corolla SE,trim_key,0.003507,0.098697,0.035529
+"city_key_gladstone, OR",city_key,0.003497,0.067884,0.05152
+state_AR,state,0.003412,0.053714,0.06352
+trim_key_Honda CR-V Touring,trim_key,-0.003411,0.067884,-0.050249
+"city_key_san diego, CA",city_key,-0.003394,0.128455,-0.026425
+state_MS,state,0.003323,0.075852,0.043814
+trim_key_Toyota Tacoma TRD Sport V6,trim_key,-0.003234,0.058823,-0.054986
+trim_key_Toyota Tacoma SR,trim_key,-0.003182,0.058823,-0.054095
+state_MN,state,-0.003164,0.089645,-0.035293
+"city_key_phoenix, AZ",city_key,-0.003156,0.14087,-0.022402
+trim_key_Honda Pilot EX,trim_key,0.003032,0.089645,0.033818
+txt_accident_free,txt_accident_free,0.003016,0.261891,0.011515
+txt_one_owner,txt_one_owner,-0.002981,0.363092,-0.008211
+"city_key_chula vista, CA",city_key,0.002925,0.067884,0.043086
+"city_key_valley village, CA",city_key,-0.002914,0.063518,-0.045883
+trim_key_Chevrolet Silverado 1500 1LZ,trim_key,0.002905,0.071981,0.040364
+state_WI,state,-0.002864,0.134817,-0.021245
+trim_key_Chevrolet Silverado 1500 LTZ,trim_key,0.002849,0.067884,0.041968
+trim_key_Toyota Corolla unknown,trim_key,0.002842,0.095779,0.029674
+trim_key_Toyota RAV4 XLE,trim_key,0.002824,0.142826,0.019769
+state_NE,state,-0.002823,0.053714,-0.052552
+"city_key_garland, TX",city_key,-0.002806,0.071981,-0.038988
+trim_key_Honda Civic EX-L,trim_key,0.00279,0.058823,0.047426
+title_status_clean,title_status,0.002703,1.0,0.002703
+"city_key_pompano beach, FL",city_key,-0.00269,0.058823,-0.04573
+"city_key_scottsdale, AZ",city_key,-0.002666,0.053714,-0.049635
+trim_key_Toyota Corolla S,trim_key,0.002664,0.071981,0.037009
+"city_key_staten island, NY",city_key,-0.002588,0.075852,-0.034121
+transmission_unknown,transmission,0.002538,1.0,0.002538
+state_GA,state,0.002528,0.219846,0.011498
+trim_key_Chevrolet Equinox unknown,trim_key,-0.002499,0.053714,-0.046528
+trim_key_Ford Escape unknown,trim_key,-0.002496,0.053714,-0.046467
+"city_key_harbor city, CA",city_key,0.002486,0.071981,0.034542
+trim_key_Honda Pilot Touring,trim_key,0.002468,0.106958,0.023078
+"city_key_hollywood, FL",city_key,-0.002455,0.063518,-0.038646
+exterior_color_green,exterior_color,0.002452,1.0,0.002452
+"city_key_miami, FL",city_key,-0.00243,0.104281,-0.023301
+"city_key_glendale, AZ",city_key,-0.002427,0.067884,-0.035758
+state_FL,state,-0.00239,0.290672,-0.008221
+trim_key_Toyota Camry LE,trim_key,-0.002361,0.119408,-0.019773
+state_NM,state,0.002347,0.071981,0.032613
+state_SC,state,0.002244,0.075852,0.029583
+trim_key_Toyota Corolla LE,trim_key,0.002233,0.153996,0.014499
+"city_key_van nuys, CA",city_key,0.002216,0.053714,0.041248
+"city_key_tucson, AZ",city_key,-0.002211,0.067884,-0.032564
+"city_key_jacksonville, FL",city_key,0.002199,0.083043,0.026478
+"city_key_chicago, IL",city_key,-0.002182,0.067884,-0.032145
+"city_key_fort myers, FL",city_key,-0.002143,0.053714,-0.03989
+trim_key_Chevrolet Tahoe LTZ,trim_key,0.00214,0.086409,0.024768
+trim_key_Toyota Tacoma SR5 V6,trim_key,-0.002129,0.063518,-0.033515
+trim_key_Chevrolet Silverado 1500 RST,trim_key,0.002121,0.079531,0.026666
+state_NY,state,0.002111,0.207609,0.010169
+"city_key_lynnwood, WA",city_key,0.002105,0.071981,0.029238
+msrp_match_level_trim,msrp_match_level,0.002104,1.0,0.002104
+msrp_match_level_model_year,msrp_match_level,-0.002104,1.0,-0.002104
+"city_key_janesville, WI",city_key,0.002096,0.058823,0.035625
+trim_key_Toyota Camry SE,trim_key,-0.002085,0.159259,-0.01309
+state_VA,state,-0.002018,0.112113,-0.018004
+"city_key_grayson, GA",city_key,0.002018,0.053714,0.037575
+state_MD,state,0.001958,0.063518,0.030829
+trim_key_Honda CR-V EX-L,trim_key,-0.001922,0.138884,-0.01384
+"city_key_beaverton, OR",city_key,0.001889,0.083043,0.022748
+exterior_color_red,exterior_color,-0.001889,1.0,-0.001889
+"city_key_escondido, CA",city_key,0.001879,0.075852,0.024776
+trim_key_Honda Accord EX,trim_key,0.001854,0.083043,0.022331
+trim_key_Honda CR-V LX,trim_key,0.001783,0.11703,0.015237
+trim_key_Toyota Tacoma TRD Off Road V6,trim_key,-0.00178,0.086409,-0.020598
+"city_key_vancouver, WA",city_key,-0.001763,0.053714,-0.03283
+"city_key_longmont, CO",city_key,0.001761,0.098697,0.017843
+"city_key_portland, OR",city_key,-0.001703,0.136867,-0.01244
+txt_clean_history,txt_clean_history,0.001609,0.31427,0.00512
+lat,lat,0.001604,6.138723,0.000261
+state_unknown,state,0.001573,0.079531,0.019775
+city_key_unknown,city_key,0.001573,0.079531,0.019775
+state_KY,state,-0.001568,0.079531,-0.019711
+exterior_color_unknown,exterior_color,0.001545,1.0,0.001545
+"city_key_woodside, NY",city_key,-0.001538,0.053714,-0.028628
+trim_key_Honda CR-V unknown,trim_key,0.001532,0.063518,0.024127
+trim_key_Chevrolet Equinox Premier,trim_key,-0.001474,0.063518,-0.023201
+state_NV,state,-0.001432,0.058823,-0.024337
+"city_key_concord, NH",city_key,0.00141,0.053714,0.026243
+"city_key_tampa, FL",city_key,-0.001409,0.071981,-0.019577
+trim_key_Chevrolet Silverado 1500 Custom,trim_key,-0.001409,0.067884,-0.020751
+"city_key_east derry, NH",city_key,0.001397,0.053714,0.026017
+trim_key_Honda Pilot Elite,trim_key,0.001368,0.075852,0.01804
+state_WA,state,-0.001355,0.229061,-0.005918
+"city_key_national city, CA",city_key,0.001352,0.067884,0.019913
+txt_new_tires,txt_new_tires,0.001319,0.225661,0.005844
+trim_key_Honda Accord unknown,trim_key,0.001314,0.071981,0.018255
+state_MI,state,-0.00131,0.106958,-0.012244
+trim_key_Chevrolet Equinox LTZ,trim_key,0.001275,0.063518,0.020069
+"city_key_westlake village, CA",city_key,0.001231,0.058823,0.020923
+"city_key_puyallup, WA",city_key,-0.001194,0.079531,-0.015016
+trim_key_Toyota Tacoma SR V6,trim_key,-0.001168,0.058823,-0.019855
+trim_key_Honda Accord EX-L,trim_key,0.001146,0.083043,0.013799
+trim_key_Honda CR-V EX,trim_key,0.001141,0.144753,0.007885
+"city_key_bradenton, FL",city_key,-0.001124,0.053714,-0.020926
+trim_key_Chevrolet Malibu 1LT,trim_key,-0.001084,0.14087,-0.007693
+body_type_convertible,body_type,-0.001082,1.0,-0.001082
+"city_key_marietta, GA",city_key,-0.001074,0.053714,-0.019995
+trim_key_Chevrolet Malibu 1LS,trim_key,-0.001041,0.071981,-0.014459
+trim_key_Chevrolet Malibu LS,trim_key,-0.001033,0.089645,-0.011526
+txt_non_smoker,txt_non_smoker,0.001024,0.203762,0.005023
+trim_key_Chevrolet Tahoe Premier,trim_key,0.000983,0.075852,0.012963
+state_infrequent_sklearn,state,-0.00096,0.109568,-0.008764
+exterior_color_black,exterior_color,-0.000946,1.0,-0.000946
+state_CT,state,0.00092,0.067884,0.013558
+"city_key_everett, WA",city_key,0.000904,0.071981,0.012565
+trim_key_Honda Pilot EX-L,trim_key,0.0009,0.148526,0.006059
+exterior_color_blue,exterior_color,-0.000899,1.0,-0.000899
+trim_key_Ford Escape S,trim_key,-0.000889,0.053714,-0.016552
+state_KS,state,-0.000888,0.067884,-0.013079
+trim_key_Toyota Tacoma TRD Sport,trim_key,-0.000886,0.067884,-0.01305
+trim_key_Ford Escape Active,trim_key,0.000867,0.063518,0.013642
+trim_key_Chevrolet Silverado 1500 unknown,trim_key,0.000844,0.092764,0.009101
+trim_key_Chevrolet Silverado 1500 LT,trim_key,0.000797,0.104281,0.007642
+state_MO,state,0.000795,0.095779,0.008298
+"city_key_mesa, AZ",city_key,0.000742,0.114599,0.006477
+state_ND,state,-0.000737,0.063518,-0.011609
+trim_key_Honda Accord EX-L V-6,trim_key,-0.000723,0.063518,-0.011378
+"city_key_dallas, TX",city_key,-0.000679,0.098697,-0.006877
+trim_key_Chevrolet Malibu LT,trim_key,-0.000679,0.132733,-0.005113
+"city_key_san jose, CA",city_key,-0.000658,0.086409,-0.00762
+make_Honda,make,-0.000637,1.0,-0.000637
+state_OR,state,-0.000595,0.20246,-0.00294
+"city_key_fremont, CA",city_key,-0.000557,0.053714,-0.010363
+"city_key_richardson, TX",city_key,-0.000555,0.053714,-0.010325
+txt_service_records,txt_service_records,0.000555,0.207609,0.002671
+state_NJ,state,0.000552,0.136867,0.004033
+state_AZ,state,0.00053,0.233498,0.002271
+trim_key_Ford Mustang unknown,trim_key,0.000488,0.067884,0.007192
+"city_key_arlington, TX",city_key,-0.000477,0.079531,-0.005997
+"city_key_atlanta, GA",city_key,0.000384,0.067884,0.005657
+trim_key_Toyota RAV4 LE,trim_key,0.000363,0.132733,0.002737
+"city_key_williston, ND",city_key,-0.000363,0.053714,-0.00675
+state_ID,state,-0.000359,0.079531,-0.004511
+"city_key_salem, NH",city_key,0.00035,0.053714,0.006518
+"city_key_gresham, OR",city_key,0.000243,0.067884,0.00358
+trim_key_Toyota Camry XSE,trim_key,0.000197,0.075852,0.002603
+state_OK,state,0.000184,0.104281,0.001768
+"city_key_hackettstown, NJ",city_key,-0.000183,0.071981,-0.00254
+state_IA,state,-0.000155,0.075852,-0.00205
+"city_key_west palm beach, FL",city_key,0.00014,0.089645,0.001557
+region_unknown,region,0.000125,1.0,0.000125
+trim_key_Honda Pilot LX,trim_key,-0.000119,0.058823,-0.002017
+state_LA,state,0.0001,0.067884,0.001468
+transmission_other,transmission,-7e-05,1.0,-7e-05
+trim_key_Toyota Tacoma TRD Off Road,trim_key,-3.2e-05,0.067884,-0.000472

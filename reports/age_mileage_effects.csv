@@ -1,0 +1,10 @@
+model,scenario,mean_change,median_change,share_negative
+ridge,"+1 year, same mileage",-0.02025,-0.02118,1.0
+ridge,"+10k miles, same age",-0.0234,-0.02275,1.0
+ridge,+1 year and +12.1k miles (median annual),-0.04816,-0.04862,1.0
+random_forest,"+1 year, same mileage",-0.00875,-0.00668,0.71824
+random_forest,"+10k miles, same age",-0.02251,-0.01905,0.96074
+random_forest,+1 year and +12.1k miles (median annual),-0.03632,-0.03209,0.97691
+hist_gb,"+1 year, same mileage",-0.01376,-0.01082,0.8037
+hist_gb,"+10k miles, same age",-0.02313,-0.01945,0.83603
+hist_gb,+1 year and +12.1k miles (median annual),-0.04341,-0.03952,0.95843

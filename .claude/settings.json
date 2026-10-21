@@ -29,7 +29,10 @@
       "Bash(sed -n '/By source/,$p' reports/model_results.md)",
       "Bash(sed -n '/## Cross/,/## Resid/p' reports/model_results.md)",
       "Bash(sed -n '/By model/,/By source/p' reports/model_results.md)",
-      "Bash(git commit -q -m 'code: complete ticket 4 *)"
+      "Bash(git commit -q -m 'code: complete ticket 4 *)",
+      "Bash(cat requirements.txt .gitignore .claude/settings.json && git show HEAD -- .claude/settings.json .gitignore && head -3 data/processed/features.csv && ls models 2>/dev/null; ls .venv/bin/python 2>/dev/null; grep -n \"def md_table\" -A15 src/preprocess.py; grep -n \"REPORTS_DIR\\\\|PROCESSED_DIR\" src/preprocess.py | head)",
+      "Bash(.venv/bin/pip list *)",
+      "Bash(time .venv/bin/python -m src.depreciation)"
     ]
   }
 }
