@@ -9,3 +9,6 @@ data/cache/
 
 # Scraper run logs
 logs/
+
+# Fitted model pipelines (re-creatable with python -m src.train)
+models/

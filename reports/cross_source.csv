@@ -1,0 +1,13 @@
+model,train_source,test_source,n_train,n_test,mae,rmse,r2
+ridge,autolist,autolist,833,198,0.0529,0.0687,0.9041
+ridge,autolist,craigslist,833,235,0.0807,0.1161,0.6907
+ridge,craigslist,autolist,895,198,0.1071,0.1391,0.6064
+ridge,craigslist,craigslist,895,235,0.081,0.1158,0.6923
+random_forest,autolist,autolist,833,198,0.0648,0.0835,0.8582
+random_forest,autolist,craigslist,833,235,0.0938,0.1292,0.6169
+random_forest,craigslist,autolist,895,198,0.0905,0.1128,0.7413
+random_forest,craigslist,craigslist,895,235,0.0842,0.1152,0.6953
+hist_gb,autolist,autolist,833,198,0.0526,0.0705,0.8988
+hist_gb,autolist,craigslist,833,235,0.083,0.1226,0.6551
+hist_gb,craigslist,autolist,895,198,0.0781,0.0993,0.7995
+hist_gb,craigslist,craigslist,895,235,0.0748,0.1083,0.7307

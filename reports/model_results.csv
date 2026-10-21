@@ -1,0 +1,6 @@
+model,params,cv_mae_mean,cv_mae_std,cv_rmse_mean,cv_rmse_std,cv_r2_mean,cv_r2_std,train_mae,test_mae,test_rmse,test_r2,search_candidates,search_seconds,selected
+baseline_mean,-,0.1929,0.0034,0.2318,0.0019,-0.0015,0.0012,0.1928,0.1861,0.2245,-0.0,,,False
+baseline_make_model_mean,-,0.1608,0.0058,0.196,0.0065,0.2839,0.0404,0.1592,0.161,0.1942,0.2519,,,False
+ridge,"{'encoding': 'onehot', 'alpha': 1.0}",0.0687,0.0005,0.0915,0.0032,0.844,0.0093,0.0574,0.0671,0.0953,0.82,33.0,2.9,False
+random_forest,"{'encoding': 'onehot', 'min_samples_leaf': 1, 'max_features': 0.33, 'max_depth': None}",0.0725,0.0036,0.0962,0.0053,0.8272,0.0174,0.026,0.0693,0.0978,0.8101,20.0,16.2,False
+hist_gb,"{'encoding': 'frequency', 'min_samples_leaf': 20, 'max_leaf_nodes': 7, 'max_iter': 800, 'learning_rate': 0.05, 'l2_regularization': 0.1}",0.063,0.0024,0.0853,0.0035,0.8642,0.0095,0.0365,0.0635,0.0906,0.837,30.0,37.1,True

@@ -38,6 +38,14 @@ python -m src.features
 
 This adds derived features (vehicle age, miles per year, region, and text flags from listing descriptions such as one owner, clean title and accident-free) and writes them to `data/processed/features.csv`. The encoding is not applied there: `src.features.build_preprocessor()` returns a `ColumnTransformer` that is fit on training rows inside each model pipeline. The run also writes extractor prevalence, validation and spot checks to `reports/text_features.md`, and a CV comparison of high-cardinality encodings to `reports/encoding_comparison.csv`. See [Ticket 03](implementation_steps/03_feature_engineering.md#implementation-notes).
 
+## Model Development
+
+```bash
+python -m src.train
+```
+
+This tunes Ridge, Random Forest and HistGradientBoosting with 5-fold CV on the training split (the high-cardinality encoding is tuned too), compares them with two baselines, and scores each on the held-out test set with MAE, RMSE and R². Results go to `reports/model_results.csv` and `reports/model_results.md`, together with a cross-source check (`reports/cross_source.csv`), residuals by group (`reports/residuals_by_group.csv`) and test-set predictions (`reports/test_predictions.csv`). The fitted pipelines are saved to `models/` (git-ignored). See [Ticket 04](implementation_steps/04_model_development.md#implementation-notes).
+
 ## Repository Layout
 
 ```
@@ -45,9 +53,11 @@ config/            vehicle scope and scraper settings
 data/raw/          parsed output from each source (one file per source) + MSRP
 data/processed/    integrated, cleaned dataset
 data/cache/        cached HTTP responses (not committed)
-reports/           EDA summary, preprocessing log, text-feature report, encoding comparison
+models/            fitted model pipelines (not committed; created by src.train)
+reports/           EDA summary, preprocessing log, text-feature report, encoding comparison, model results
 src/scrapers/      one module per source, plus shared HTTP/IO helpers
 src/preprocess.py  raw -> integrated pipeline
 src/features.py    derived features + encoding ColumnTransformer
+src/train.py       model tuning, evaluation and residual analysis
 implementation_steps/  per-step tickets
 ```

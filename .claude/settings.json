@@ -21,7 +21,15 @@
       "Bash(sed -i '' 's/def build_preprocessor\\(high_card=\"target\", numeric=NUMERIC_FEATURES\\):/def build_preprocessor\\(high_card=\"frequency\", numeric=NUMERIC_FEATURES\\):/' src/features.py)",
       "Bash(sort -f requirements.txt -o requirements.txt)",
       "Bash(git add *)",
-      "Bash(git commit *)"
+      "Bash(git commit *)",
+      "Bash(sed -n '/^def md_table/,/^$/p' src/preprocess.py)",
+      "Bash(time .venv/bin/python -m src.train)",
+      "Bash(.venv/bin/python -m src.train)",
+      "Bash(sed -n '/^def _fmt/,/^def md_table/p' src/preprocess.py)",
+      "Bash(sed -n '/By source/,$p' reports/model_results.md)",
+      "Bash(sed -n '/## Cross/,/## Resid/p' reports/model_results.md)",
+      "Bash(sed -n '/By model/,/By source/p' reports/model_results.md)",
+      "Bash(git commit -q -m 'code: complete ticket 4 *)"
     ]
   }
 }
