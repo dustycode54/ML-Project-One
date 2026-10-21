@@ -54,6 +54,33 @@ python -m src.depreciation   # after python -m src.train
 
 This loads the fitted pipelines from `models/` and quantifies the age and mileage effects (counterfactual changes and partial dependence). It ranks the features with Ridge contributions, Random Forest impurity, test-set permutation importance (single and grouped) and a CV ablation, and builds depreciation curves and a value-retention ranking per make and model. The feature ranking goes to `reports/feature_importance.csv` and the full write-up to `reports/depreciation_analysis.md`, together with CSVs for Ticket 06 plots (`depreciation_curves.csv`, `partial_dependence.csv`, `model_retention.csv`, …). See [Ticket 05](implementation_steps/05_depreciation_analysis.md#implementation-notes).
 
+## Visualization
+
+```bash
+python -m src.plots   # after python -m src.depreciation
+```
+
+This draws 15 report figures from the saved tables, covering data characteristics, feature ranking and model performance. Each figure is written to `reports/figures/` as PNG and SVG. Nothing is refit, so it runs in seconds. See [Ticket 06](implementation_steps/06_visualization.md#implementation-notes).
+
+## Final Report
+
+```bash
+python -m src.report   # after python -m src.plots; needs Chrome, Chromium or Edge
+```
+
+This renders [reports/final_report.md](reports/final_report.md) to `reports/final_report.pdf` with headless Chrome. Set `CHROME=/path/to/browser` if the browser isn't in a standard location. The report covers all ten graded sections. See [Ticket 07](implementation_steps/07_discussion_and_conclusion.md#implementation-notes).
+
+## Reproducing Everything
+
+The raw scraped files are committed, so the full pipeline runs offline from `data/raw/`:
+
+```bash
+python -m src.preprocess && python -m src.features && python -m src.train \
+  && python -m src.depreciation && python -m src.plots && python -m src.report
+```
+
+Re-running the scrapers first fetches the current listings, so the counts and results will differ from the report.
+
 ## Repository Layout
 
 ```
@@ -63,11 +90,14 @@ data/processed/    integrated, cleaned dataset
 data/cache/        cached HTTP responses (not committed)
 models/            fitted model pipelines (not committed; created by src.train)
 reports/           EDA summary, preprocessing log, text-feature report, encoding comparison, model results,
-                   feature importance and depreciation analysis
+                   feature importance, depreciation analysis, and the final report (.md source + .pdf)
+reports/figures/   report figures (PNG + SVG, created by src.plots)
 src/scrapers/      one module per source, plus shared HTTP/IO helpers
 src/preprocess.py  raw -> integrated pipeline
 src/features.py    derived features + encoding ColumnTransformer
 src/train.py       model tuning, evaluation and residual analysis
 src/depreciation.py  age/mileage effects, feature ranking, depreciation curves
+src/plots.py       report figures
+src/report.py      final report Markdown -> PDF
 implementation_steps/  per-step tickets
 ```

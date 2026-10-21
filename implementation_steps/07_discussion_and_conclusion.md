@@ -53,14 +53,42 @@ Synthesize the findings into the discussion and conclusion, write the AI usage s
 
 ## Acceptance Criteria
 
-- [ ] Discussion covers all four required topics.
-- [ ] Conclusion covers findings, lessons learned, and challenges.
-- [ ] AI usage statement names the tools used and distinguishes AI-assisted work from independent work.
-- [ ] Final report contains all 10 graded sections.
-- [ ] The repo is reproducible by a reader following the README.
+- [x] Discussion covers all four required topics.
+- [x] Conclusion covers findings, lessons learned, and challenges.
+- [ ] AI usage statement names the tools used and distinguishes AI-assisted work from independent work. *(Drafted; the author must complete the bracketed parts.)*
+- [x] Final report contains all 10 graded sections.
+- [x] The repo is reproducible by a reader following the README.
 
 ## Artifacts
 
 - `reports/final_report.pdf` (or `.md` / `.docx`)
 - Updated `README.md`
 - `requirements.txt`
+
+## Implementation Notes
+
+**Source and build.** The report source is [reports/final_report.md](../reports/final_report.md). `python -m src.report` ([src/report.py](../src/report.py)) renders it to `reports/final_report.pdf` (21 pages, letter size):
+- *Markdown to HTML.* python-markdown converts the source. Each `![Figure N. caption](figures/…svg)` becomes a captioned figure.
+- *HTML to PDF.* Headless Chrome prints the HTML with a print stylesheet (page numbers, no breaks inside figures or table rows). Edge and Chromium also work, and `CHROME=/path/to/browser` overrides the lookup.
+- *Rebuilding.* Edit the Markdown and re-run the command. If upstream results change, re-run `src.plots` first.
+
+**Sections.**
+
+| Section | Report § | Built from |
+|---------|----------|------------|
+| Project Description | 1 | Overview, scope, requirements checklist |
+| Data Collection with discussion | 2 | Ticket 01 notes, `collection_log.json` |
+| Preprocessing and Integration with discussion | 3 | Ticket 02 notes, `eda_summary.md` |
+| Feature Engineering with discussion | 4 | Ticket 03 notes, `text_features.md`, `encoding_comparison.csv` |
+| Model Development with discussion | 5 | Ticket 04 notes |
+| Evaluation Results with discussion | 6 | `model_results.md`, `cross_source.csv`, residuals |
+| Depreciation Analysis | 7 | Ticket 05 notes, `depreciation_analysis.md` |
+| Visualizations with discussion | 8 | Ticket 06 figures, one caption each |
+| Conclusion (discussion of factors, drivers, challenges, limitations; findings, lessons, future work) | 9 | Synthesis |
+| AI Usage Statement | 10 | **Draft with placeholders, for the author to complete** |
+
+**Numbers added during this ticket.**
+- *Ratios above 1.0.* 56 listings (2.6%) have a retention ratio above 1.0. 39 of them are Toyotas (20 Tacomas), and most are 2021–24 model years.
+- *Worst test error.* The largest HistGB test residual (−0.74) is an owner-listed 2024 Tacoma at $5,500 described as "car won't start".
+
+**AI usage statement.** Section 10 lists only what the repository shows: Claude Code was used, and the `.claude/settings.json` permissions show it ran the pipeline. The parts done independently, and how AI output was verified, are bracketed placeholders, because only the author can state them. Complete them and re-run `python -m src.report` before submitting.

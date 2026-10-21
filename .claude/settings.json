@@ -32,7 +32,18 @@
       "Bash(git commit -q -m 'code: complete ticket 4 *)",
       "Bash(cat requirements.txt .gitignore .claude/settings.json && git show HEAD -- .claude/settings.json .gitignore && head -3 data/processed/features.csv && ls models 2>/dev/null; ls .venv/bin/python 2>/dev/null; grep -n \"def md_table\" -A15 src/preprocess.py; grep -n \"REPORTS_DIR\\\\|PROCESSED_DIR\" src/preprocess.py | head)",
       "Bash(.venv/bin/pip list *)",
-      "Bash(time .venv/bin/python -m src.depreciation)"
+      "Bash(time .venv/bin/python -m src.depreciation)",
+      "Read(//Applications/Google Chrome.app/**)",
+      "Read(//Applications/**)",
+      "Bash(brew list *)",
+      "Bash(awk -F, '{print $1\",\"$3}')",
+      "Bash(awk -F, '$3==1.0' reports/ridge_coefficients.csv)",
+      "Bash(time .venv/bin/python -m src.plots)",
+      "Bash(.venv/bin/python -m src.plots)",
+      "Bash(time .venv/bin/python -m src.report)",
+      "Bash(.venv/bin/python -m src.report)",
+      "Bash(sed -n '/## Acceptance Criteria/,/## Artifacts/p' implementation_steps/04_model_development.md)",
+      "Bash(git checkout *)"
     ]
   }
 }
