@@ -13,7 +13,15 @@
       "Bash(.venv/bin/python -m src.scrapers.carsdirect_msrp)",
       "Read(//opt/homebrew/Cellar/python@3.14/3.14.2/Frameworks/Python.framework/Versions/3.14/bin/**)",
       "Bash(.venv/bin/python -)",
-      "Bash(.venv/bin/python -m src.preprocess)"
+      "Bash(.venv/bin/python -m src.preprocess)",
+      "Bash(.venv/bin/python -c \"import sklearn, pandas; print\\(sklearn.__version__, pandas.__version__\\)\")",
+      "Bash(time .venv/bin/python -m src.features)",
+      "Bash(.venv/bin/python -m src.features)",
+      "Bash(sed -n '/## Prevalence/,/## Spot/p' reports/text_features.md)",
+      "Bash(sed -i '' 's/def build_preprocessor\\(high_card=\"target\", numeric=NUMERIC_FEATURES\\):/def build_preprocessor\\(high_card=\"frequency\", numeric=NUMERIC_FEATURES\\):/' src/features.py)",
+      "Bash(sort -f requirements.txt -o requirements.txt)",
+      "Bash(git add *)",
+      "Bash(git commit *)"
     ]
   }
 }
